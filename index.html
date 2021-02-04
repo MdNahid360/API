@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHO AM I</title>
+</head>
+<body>
+    
+    <h2 style="text-align: center;">Name : <a href="">visit this place</a></h2>
+    <script>
+          fetch('https://randomuser.me/api')
+          .then(res =>res.json())
+          .then(data => {
+              const user = data.results[0];
+              console.log(data.results[0]);
+          })
+          
+    </script>
+</body>
+</html>
